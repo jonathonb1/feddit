@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/jonathonb1/feddit#readme",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "@popperjs/core": "^2.11.6",
+    "bcrypt": "^5.1.0",
     "blogy": "^2.0.6",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
