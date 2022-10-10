@@ -3,8 +3,6 @@ const sequelize = require('../../config/connection');
 const { Post, User, Comment, Vote } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-<<<<<<< Updated upstream
-=======
 // get all users
 router.get('/', (req, res) => {
     Post.findAll({
@@ -110,5 +108,4 @@ router.delete('/:id', withAuth, (req, res) => {
         });
 });
 
->>>>>>> Stashed changes
 module.exports = router;
