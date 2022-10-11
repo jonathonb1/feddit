@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
-const { Post, User, Comment, Vote } = require('../../models');
+const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// get all comments
 router.get('/', (req, res) => {
   Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// create a commment
 router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
@@ -26,6 +27,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
+// delete a comment
 router.delete('/:id', withAuth, (req, res) => {
   Comment.destroy({
     where: {
