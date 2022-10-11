@@ -5,7 +5,7 @@ const withAuth = require('../../utils/auth');
 
 module.exports = router;
 
-router.put('/:id', (req, res) => {
+router.put('/:id', withAuth, (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: {

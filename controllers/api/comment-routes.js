@@ -2,7 +2,10 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+<<<<<<< Updated upstream
 // get all comments
+=======
+>>>>>>> Stashed changes
 router.get('/', (req, res) => {
   Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -12,7 +15,10 @@ router.get('/', (req, res) => {
     });
 });
 
+<<<<<<< Updated upstream
 // create a commment
+=======
+>>>>>>> Stashed changes
 router.post('/', withAuth, (req, res) => {
   // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
@@ -27,7 +33,10 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
+<<<<<<< Updated upstream
 // delete a comment
+=======
+>>>>>>> Stashed changes
 router.delete('/:id', withAuth, (req, res) => {
   Comment.destroy({
     where: {
