@@ -3,7 +3,10 @@ const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // get all comments
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 router.get('/', (req, res) => {
@@ -16,7 +19,10 @@ router.get('/', (req, res) => {
 });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // create a commment
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 router.post('/', withAuth, (req, res) => {
@@ -34,7 +40,10 @@ router.post('/', withAuth, (req, res) => {
 });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // delete a comment
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 router.delete('/:id', withAuth, (req, res) => {

@@ -14,7 +14,10 @@ Post.belongsTo(User, {
 });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 User.belongsToMany(Post, {
   through: Vote,
   as: 'voted_posts',
@@ -38,6 +41,9 @@ Post.hasMany(Vote, {
   foreignKey: 'post_id'
 });
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
@@ -59,7 +65,11 @@ Post.hasMany(Comment, {
 });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = { User, Post, Comment };
+=======
+module.exports = { User, Post, Comment };
+>>>>>>> Stashed changes
 =======
 module.exports = { User, Post, Comment };
 >>>>>>> Stashed changes
