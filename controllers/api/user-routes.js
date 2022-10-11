@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Post, User, Comment, Vote } = require('../../models');
+const { Post, User, Comment, Vote } = require('../../models/Index');
 const withAuth = require('../../utils/auth');
 
 module.exports = router;
 
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: {

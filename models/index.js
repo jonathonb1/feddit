@@ -1,6 +1,7 @@
 // import all models
 const Post = require('./Post');
 const User = require('./User');
+const Vote = require('./Vote');
 const Comment = require('./Comment');
 
 // create associations
@@ -13,14 +14,6 @@ Post.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 User.belongsToMany(Post, {
   through: Vote,
   as: 'voted_posts',
@@ -36,6 +29,16 @@ Post.belongsToMany(User, {
   onDelete: 'SET NULL'
 });
 
+Vote.belongsTo(User, {
+  foreignKey: 'user_id',
+  onDelete: 'SET NULL'
+});
+
+Vote.belongsTo(Post, {
+  foreignKey: 'post_id',
+  onDelete: 'SET NULL'
+});
+
 User.hasMany(Vote, {
   foreignKey: 'user_id'
 });
@@ -44,13 +47,6 @@ Post.hasMany(Vote, {
   foreignKey: 'post_id'
 });
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'SET NULL'
@@ -70,16 +66,4 @@ Post.hasMany(Comment, {
   foreignKey: 'post_id'
 });
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-module.exports = { User, Post, Comment };
-=======
-module.exports = { User, Post, Comment };
->>>>>>> Stashed changes
-=======
-module.exports = { User, Post, Comment };
->>>>>>> Stashed changes
-=======
-module.exports = { User, Post, Comment };
->>>>>>> Stashed changes
+module.exports = { User, Post, Vote, Comment };
