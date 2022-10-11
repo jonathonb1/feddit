@@ -4,7 +4,10 @@ const withAuth = require('../../utils/auth');
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // get all comments
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -20,7 +23,10 @@ router.get('/', (req, res) => {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // create a commment
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -41,7 +47,10 @@ router.post('/', withAuth, (req, res) => {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // delete a comment
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======

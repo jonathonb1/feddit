@@ -15,7 +15,10 @@ Post.belongsTo(User, {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 User.belongsToMany(Post, {
@@ -42,6 +45,9 @@ Post.hasMany(Vote, {
 });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -66,7 +72,11 @@ Post.hasMany(Comment, {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 module.exports = { User, Post, Comment };
+=======
+module.exports = { User, Post, Comment };
+>>>>>>> Stashed changes
 =======
 module.exports = { User, Post, Comment };
 >>>>>>> Stashed changes
