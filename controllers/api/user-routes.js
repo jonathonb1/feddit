@@ -1,8 +1,20 @@
 const router = require('express').Router();
-const { Post, User, Comment, Vote } = require('../../models');
+const { Post, User, Comment, Vote } = require('../../models/Index');
 const withAuth = require('../../utils/auth');
 
 module.exports = router;
+
+// get all users
+router.get('/', (req, res) => {
+    User.findAll({
+      attributes: { exclude: ['password'] }
+    })
+      .then(dbUserData => res.json(dbUserData))
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
 
 router.put('/:id', (req, res) => {
     User.update(req.body, {
