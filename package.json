@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "seeds": "node seeds/index.js",
     "start": "node server.js"
   },
   "repository": {
@@ -29,6 +30,6 @@
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.24.0"
+    "sequelize": "^5.21.5"
   }
 }
