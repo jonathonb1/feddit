@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models/Index');
+const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all comments
