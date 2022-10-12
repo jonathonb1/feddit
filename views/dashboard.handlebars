@@ -34,15 +34,15 @@
                                     data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                     Log In
                                 </button>
-                                <form class="dropdown-menu p-4">
+                                <form class="dropdown-menu p-4 login-form">
                                     <div class="mb-3">
                                         <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                                        <input type="email" class="form-control" id="email-login"
                                             placeholder="email@example.com">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                                        <input type="password" class="form-control" id="password-login"
                                             placeholder="Password">
                                     </div>
                                     <div class="mb-3">
@@ -66,21 +66,21 @@
                                     data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                     Sign Up
                                 </button>
-                                <form class="dropdown-menu p-4">
+                                <form class="dropdown-menu p-4 signup-form">
                                     <div class="mb-3">
                                         <label for="exampleDropdownFormEmail2" class="form-label">Enter an email</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                                        <input type="email" class="form-control" id="email-signup"
                                             placeholder="email@example.com">
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleDropdownFormPassword2" class="form-label">Enter a
                                             password</label>
-                                        <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                                        <input type="password" class="form-control" id="password-signup"
                                             placeholder="Password">
                                     </div>
                                     <div class="mb-3">
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <button type="submit" class="btn btn-primary">Sign up</button>
                                 </form>
                             </div>
                         </li>
@@ -94,38 +94,6 @@
             </div>
         </nav>
         <!-- /navbar -->
-
-        {{!-- categories --}}
-        <p class="text-center">Categories</p>
-        <div class="container">
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <div class="row">
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">Home Cooking</button>
-                    </div>
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">Favorite Restaurants</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">Take-out</button>
-                    </div>
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">Secret Ingredients</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">Family Favorites</button>
-                    </div>
-                    <div class="col-6">
-                        <button class="btn btn-primary" type="button">You're eating what?!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{!-- /categories --}}
 
         <section>
             <div>
@@ -141,30 +109,19 @@
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text"></div>
                 </div>
-                <label for="categories">Select a category:</label>
-                <select name="categories" id="categories">
-                    <option value="">---</option>
-                    <option value="homecooking">Home Cooking</option>
-                    <option value="favoriterest">Favotie Restaurant</option>
-                    <option value="takeout">Take-out</option>
-                    <option value="secreting">Secret Ingredients</option>
-                    <option value="familyfav">Family Favorites</option>
-                    <option value="secreting">Secret Ingredients</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
         {{!-- /new post --}}
 
         <main>
-            <p class="text-center">Featured</p>
             {{{ body }}}
         </main>
-        <footer>
-            Thanks for visiting!!!
-        </footer>
     </div>
 
 </body>
 
 </html>
+
+
+<script src="/javascript/login.js"></script>
+
