@@ -25,15 +25,41 @@
 
         {{!-- new post --}}
         <div class="container">
-            <form>
+            <form class="new-post-form">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Whats on your plate?</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"></div>
+                    <label for="exampleInputEmail1" class="form-label" >Whats on your plate?</label>
+                    <input type="text" class="form-control" id="post-title" name="post-title "aria-describedby="emailHelp" placeholder="Title...">
+                    <div class="input-group">
+                        <span class="input-group-text">Tell me more</span>
+                        <textarea class="form-control" id="post-content" name="post-content" aria-label="With textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
                 </div>
             </form>
         </div>
+        <section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Link</label>
+      <textarea id="post-content" name="post-content"></textarea>
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
         {{!-- /new post --}}
+        <ul class="post-list">
+            {{#each posts as |post|}}
+            <li>
+                {{> post-info post }}
+            </li>
+            {{/each}}
+        </ul>
 
         <main>
             {{{ body }}}
@@ -46,4 +72,4 @@
 
 
 <script src="/javascript/login.js"></script>
-
+<script src="/javascript/add-post.js"></script>
