@@ -28,7 +28,6 @@ feddit is a blogging site that helps to connect people who are interested in any
 <img src="https://cdn.iconscout.com/icon/free/png-256/sequelize-3-1175091.png" width="100" height="100">
 <img src="https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png" width="100" height="100">
 <img src="https://icon2.cleanpng.com/20180425/xeq/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84de7b809.1939946215246930699491.jpg" width="100" height="100">
-<img src="https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png" width="100" height="100">
 <img src="https://miro.medium.com/max/1160/0*skYUWg3ZvcY8xRf5" width="100" height="100">
 <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/heroku_icon_130912.png" width="100" height="100">
 
