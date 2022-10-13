@@ -7,12 +7,12 @@ function searchButton() {
 
     const searchVal = document.querySelector('.searchVal').value.trim();
 
-    router.get('/post?title=' & searchVal), (req, res) => {
+    router.get('/'), (req, res) => {
         console.log('======================');
         Post.findAll({
-            // where: {
-            //     postdata.title.value.includes(searchVal)
-            // },
+            where: {
+                title: { [Sequelize.Op.iLike]: '%' + searchVal + '%' }
+            },
             attributes: [
                 'id',
                 'post_content',
