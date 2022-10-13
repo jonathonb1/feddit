@@ -1,20 +1,19 @@
-.container {
-    margin-top: 40px;
+.container1 {
+    margin-bottom: 40px;
+    background-image: url(../assets/yu-hosoi-qplKfNIP_5g-unsplash.jpg);
+    background-size: 350px;
+    background-repeat: ;
+    
 }
 
-/* .dashbtn {
-    text-decoration: none;
+.meta {
+    background-color: mistyrose;
 }
-
-a {
-    color: blue;
-    text-decoration: none;
-} */
-
 
 html, body {
     margin: 0;
     padding: 0;
+    background-color: mistyrose;
 }
 
 #container {
