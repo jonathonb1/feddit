@@ -112,10 +112,10 @@ function searchButton() {
 
   for (let index = 0; index < postdata.length; index++) {
 
-    if (postdata[index].title.includes(searchVal) = false) {
-      postdata[index].style.display = 'none';
+    if (postdata[index].title.includes(searchVal)) {
     }
     else {
+       postdata[index].style.display = 'none';
     }
 
   }
