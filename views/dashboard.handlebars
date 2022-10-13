@@ -38,14 +38,13 @@
             </form>
         </div>
         {{!-- /new post --}}
-        <ul class="post-list">
+        <ul id="results" class="post-list">
             {{#each posts as |post|}}
-            <li>
+            <li class="post">
                 {{> post-info post }}
             </li>
             {{/each}}
         </ul>
-
         <main>
             {{{ body }}}
         </main>
@@ -58,3 +57,4 @@
 
 <script src="/javascript/login.js"></script>
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/search.js"></script>
