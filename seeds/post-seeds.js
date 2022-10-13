@@ -106,24 +106,4 @@ const postdata = [
 
 const seedPosts = () => Post.bulkCreate(postdata);
 
-function searchButton() {
-
-  const searchVal = document.querySelector('.searchVal').value.trim();
-
-  for (let index = 0; index < postdata.length; index++) {
-
-    if (postdata[index].title.includes(searchVal)) {
-    }
-    else {
-       postdata[index].style.display = 'none';
-    }
-
-  }
-
-}
-
-document.querySelector('.searchBtn').addEventListener('submit', searchButton)
-
-
-
 module.exports = seedPosts;
