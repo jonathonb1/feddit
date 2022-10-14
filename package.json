@@ -1,6 +1,9 @@
 {
   "name": "feddit",
   "version": "1.0.0",
+   "engines": {
+    "node": "16.17.0"
+  },
   "description": "## Table of Contents",
   "main": "server.js",
   "scripts": {
